@@ -39,10 +39,34 @@ void loop() {
     Serial.println("Yellow pressed");
 
     //Naiver Ansatz --> wird später verbessert (entfernt)
-    digitalWrite(LED_GRN,HIGH);
-    delay(2000);
-    digitalWrite(LED_GRN,LOW);
-  }
+    
+    for (int i = 0; i < 3; i++)
+    {
+      
+      
+      for ( int i = 0; i < 3; i++)
+      {
+        digitalWrite(LED_GRN,HIGH);
+        delay(400);
+        digitalWrite(LED_GRN,LOW);
+        delay(400);
+      }
+        for (int i = 0; i < 3; i++)
+        {
+        digitalWrite(LED_GRN,HIGH);
+        delay(1000);
+        digitalWrite(LED_GRN,LOW);
+        delay(1000);
+        }
+        
+        
+      }
+
+
+    }
+    
+    
+  
   
   if (btnBlue.pressed())
   {
